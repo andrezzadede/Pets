@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="icon" type="image/png" href="img/crown.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Pandora Trackers</title>
+
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/fa-svg-with-js.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/sign-in.css" />
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+                <h5 class="my-0 mr-md-auto font-weight-normal" style="color: #dc3545;">Pandora Trackers</h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+                    <a class="p-2 text-dark" href="index.html"><i class="fas fa-home"></i></a>
+                    <a class="p-2 text-dark" href="#">Tracker</a>  
+                </nav>
+            </div>
+
+            <form class="form-signin" method="POST" action="registrar/registrar.php">
+                <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center; color: #dc3545;">Faça seu cadastro</h1>
+                
+                <label for="nome" class="sr-only">Nome </label>
+                <input type="text" id="nome" name="nome" class="form-control" placeholder="Informe seu nome" required autofocus>
+                
+                <label for="email" class="sr-only">Email </label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Endereço de email" required>
+                
+                <label for="senha" class="sr-only">Senha</label>
+                <input type="password" id="senha" name="senha" class="form-control" placeholder="Informe a senha" required>
+
+                <button class="btn btn-lg btn-outline-danger btn-block" type="submit">
+                    Cadastrar <i class="far fa-save"></i>
+                </button>
+                <p class="mt-5 mb-3 text-muted" style="text-align: center;">Todos os direitos reservados &copy; 2017-2018</p>
+            </form>
+
+        </div>
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/fontawesome-all.min.js"></script>
+    </body>
+</html>

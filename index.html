@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="icon" type="image/png" href="img/crown.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Pandora Trackers</title>
+
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/fa-svg-with-js.css" />
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/sign-in.css" />
+
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/css/main.css">
+
+        <style>
+        #social-midia  {
+            margin-top: 140px;
+            text-align: right;
+        }
+        #social-midia ul {
+            list-style: none;
+            display: inline;
+        }
+        #social-midia ul li { 
+            display:inline-block;
+        }
+        #social-midia ul li a{
+            font-size: 25px;
+            padding: 0 10px;
+        }
+        .effect-icon {
+            transition: all .3s ease;
+        }
+        .effect-icon:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 6px rgba(0,0,0,.3)
+        }
+        </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+                <h5 class="my-0 mr-md-auto font-weight-normal" style="color: #dc3545;" id="logo">Pandora Trackers</h5>
+                <nav class="my-2 my-md-0 mr-md-3">
+                    <a class="p-2 text-dark" href="register.html">Cadastro</a>
+                    <a class="p-2 text-dark" href="#">Tracker</a>  
+                </nav>
+            </div>
+
+            <form class="form-signin" method="POST" action="login/autentica.php">
+                <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+                <h1 class="h3 mb-3 font-weight-normal" style="text-align: center; color: #dc3545;">Faça seu login</h1>
+                <label for="email" class="sr-only">Email </label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Endereço de email" required autofocus>
+                <label for="senha" class="sr-only">Senha</label>
+                <input type="password" id="senha" name="senha" class="form-control" placeholder="Informe a senha" required>
+                <div class="checkbox mb-3">
+                    <!-- <label>
+                    <input type="checkbox" value="remember-me"> Lembre-me
+                    </label> -->
+                </div>
+                    <button class="btn btn-lg btn-outline-danger btn-block" type="submit">
+                        Entrar <i class="fas fa-arrow-circle-right"></i>
+                    </button>
+                    <p class="mt-5 mb-3 text-muted" style="text-align: center;">Todos os direitos reservados &copy; 2017-2018</p>
+            </form>
+            
+            <div class="row">
+                <div class="col-md-12" id="social-midia">
+                    <ul>
+                        <li><a href="https://www.facebook.com/andrezza.l.aragao" target="_blank" class="text-dark"><i class="fab fa-facebook effect-icon" ></i></a></li>
+                        <li><a href="https://twitter.com/Bkristene" target="_blank" class="text-dark"><i class="fab fa-twitter effect-icon"></i></a></li>
+                        <li><a href="https://www.instagram.com/andrezzadede/" target="_blank" class="text-dark"><i class="fab fa-instagram effect-icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <script src="bootstrap/js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/fontawesome-all.min.js"></script>
+        
+    </body>
+</html>
